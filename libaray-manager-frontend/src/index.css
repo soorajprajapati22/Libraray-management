@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Auth pages */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.form-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.form-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-card label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.95rem;
+}
+
+.form-card input,
+.content-card input,
+.content-card textarea {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.content-card textarea {
+  resize: vertical;
+}
+
+.btn-green {
+  background-color: #5cb85c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 6px;
+  border-radius: 4px;
+}
+
+.btn-green:hover {
+  background-color: #4cae4c;
+}
+
+.btn-green:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.btn-blue {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 6px;
+  border-radius: 4px;
+}
+
+.btn-blue:hover {
+  background-color: #286090;
+}
+
+.btn-blue:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.form-link {
+  display: block;
+  margin-top: 16px;
+  color: #337ab7;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+.error-msg {
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.success-msg {
+  color: #5cb85c;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Catalog layout */
+.catalog-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-header {
+  background: #fff;
+  text-align: center;
+  padding: 40px 20px 30px;
+}
+
+.catalog-header-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.catalog-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #333;
+}
+
+.catalog-user-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.catalog-username {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.btn-logout {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-logout:hover {
+  background-color: #c9302c;
+}
+
+.catalog-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 16px;
+}
+
+.catalog-nav a {
+  color: #5cb85c;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.catalog-nav a:hover {
+  text-decoration: underline;
+}
+
+.catalog-intro {
+  color: #555;
+  font-size: 0.95rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.catalog-content {
+  flex: 1;
+  background: #f0f0f0;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.content-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.content-card label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.95rem;
+}
+
+.input-with-btn {
+  display: flex;
+  gap: 8px;
+}
+
+.input-with-btn input {
+  flex: 1;
+}
+
+.btn-load {
+  background: #777;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.btn-load:hover {
+  background: #555;
+}
+
+/* Book list */
+.book-list-card {
+  max-width: 700px;
+}
+
+.book-list {
+  margin-top: 10px;
+}
+
+.book-item {
+  padding: 16px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.book-item:last-child {
+  border-bottom: none;
+}
+
+.book-item h3 {
+  color: #5cb85c;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.book-item p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.book-desc {
+  color: #666;
+  margin-top: 4px;
+}
